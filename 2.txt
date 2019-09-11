@@ -1,0 +1,14 @@
+echo -e：转义
+ echo -e 'wrdad\n' 能够换行
+
+打印列数：
+举例：打印history的第二列
+history | awk '{print $2}'
+
+sort -n：按数值排序
+
+sort -n -r：按数值排序   -r：降序排序
+
+history | grep -A 3 ls 获取ls的行数和它后面的3行
+history | grep -B 3 ls 。。。前面。。。
+history | grep -C 3 ls...
